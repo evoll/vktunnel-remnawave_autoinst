@@ -39,7 +39,7 @@ if ! command -v script >/dev/null 2>&1; then
   apt-get install -y util-linux || true
 fi
 
-byellow "2) Установка Remnawave (интерактив)."
+bblue "2) Установка Remnawave (интерактив)."
 byellow "После появления 'Installation complete. Press Enter to continue...' можете нажать Enter или Ctrl+C — скрипт скрипт продолжит работу."
 set +e
 script -q -f -c 'bash <(curl -s https://raw.githubusercontent.com/xxphantom/remnawave-installer/main/install.sh)' /root/remnawave-installer.ttylog
