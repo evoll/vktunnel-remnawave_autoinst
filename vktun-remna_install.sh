@@ -96,7 +96,7 @@ systemctl daemon-reload
 systemctl enable --now vk-tunnel.service
 bgreen "VK Tunnel готов (порт 10888). Крон следит и перезапускает при падении."
 
-byellow "3) Установка Remnawave (интерактив)."
+bblue "3) Установка Remnawave (интерактив)."
 byellow "После появления 'Installation complete. Press Enter to continue...' можете нажать Enter или Ctrl+C — скрипт скрипт продолжит работу."
 set +e
 script -q -f -c 'bash <(curl -s https://raw.githubusercontent.com/xxphantom/remnawave-installer/main/install.sh)' /root/remnawave-installer.ttylog
