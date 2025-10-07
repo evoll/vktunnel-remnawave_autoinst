@@ -99,7 +99,7 @@ bgreen "VK Tunnel готов (порт 10888). Крон следит и пере
 bblue "3) Установка Remnawave (интерактив)."
 byellow "После появления 'Installation complete. Press Enter to continue...' можете нажать Enter или Ctrl+C — скрипт скрипт продолжит работу."
 set +e
-script -q -f -c 'bash <(curl -s https://raw.githubusercontent.com/xxphantom/remnawave-installer/main/install.sh)' /root/remnawave-installer.ttylog
+script -q -f -c 'bash <(curl -s https://raw.githubusercontent.com/xxphantom/remnawave-installer/main/install.sh) @ --lang=ru' /root/remnawave-installer.ttylog
 RET=$?
 set -e
 bgreen "Remnawave-инсталлятор завершён (код ${RET}). Продолжаем..."
